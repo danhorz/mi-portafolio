@@ -12,12 +12,11 @@ export const ProyectosPage = () => {
 
   
   return (
-    <div className="bg-gray-900 h-screen gap-6 p-6 text-black flex flex-col">
-      <CardSinImagen texto={texto} titulo={titulo}></CardSinImagen>
-      <CardSinImagen texto={texto2} titulo={titulo2}></CardSinImagen>
-      <CardSinImagen texto={texto3} titulo={titulo3}></CardSinImagen>
-     
-    </div>
+    <div className="bg-gray-900 min-h-screen gap-6 p-4 sm:p-6 flex flex-col items-center">
+  <CardSinImagen texto={texto} titulo={titulo} />
+  <CardSinImagen texto={texto2} titulo={titulo2} />
+  <CardSinImagen texto={texto3} titulo={titulo3} />
+</div>
     
   );
 };

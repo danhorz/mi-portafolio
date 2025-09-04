@@ -14,7 +14,7 @@ export const EstudiosPage = () => {
 
   
   return (
-    <div className="bg-gray-900 h-screen gap-6 p-6 text-black flex flex-col">
+     <div className="bg-gray-900 min-h-screen gap-6 p-4 sm:p-6 text-black flex flex-col sm:flex-row">
       
       <CardLinea titulo={tituloResumen} eventos={eventos}></CardLinea>
     </div>

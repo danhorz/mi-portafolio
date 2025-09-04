@@ -110,18 +110,32 @@ export const SobremiPage = () => {
   return (
     <div className="bg-gray-900 gap-6 p-6 text-black  flex flex-col">
       <div className="flex justify-center">
-      <div className="flex flex-col items-center rounded-2xl bg-white w-max">
-        <img className="rounded-t-2xl w-[30rem] h-[32rem] " src={imagen} alt=""  />
-        <p className="font-bold text-xl text-gray-500 p-4">Daniel Enrique Horna Zegarra</p>
-      </div>
+        <div className="flex flex-col items-center rounded-2xl bg-white w-full max-w-sm sm:max-w-md md:max-w-lg">
+          <img
+            className="rounded-t-2xl w-full h-auto object-cover"
+            src={imagen}
+            alt="Foto de perfil"
+          />
+          <p className="font-bold text-xl text-gray-500 p-4 text-center">
+            Daniel Enrique Horna Zegarra
+          </p>
+        </div>
       </div>
 
       <CardSinImagen
         titulo={tituloResumen}
         texto={textoResumen}
       ></CardSinImagen>
-      <CardIcons titulo={tituloLenguajes} arreglo={arreglo} direccion={"right"}></CardIcons>
-      <CardIcons titulo={tituloHabilidades} arreglo={arreglo2} direccion={"left"}></CardIcons>
+      <CardIcons
+        titulo={tituloLenguajes}
+        arreglo={arreglo}
+        direccion={"right"}
+      ></CardIcons>
+      <CardIcons
+        titulo={tituloHabilidades}
+        arreglo={arreglo2}
+        direccion={"left"}
+      ></CardIcons>
     </div>
   );
 };
